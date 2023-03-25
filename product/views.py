@@ -22,5 +22,8 @@ def product_list(request):
            
        
         
+@api_view({'GET'})
+def product_detail(request, pk):
 
-
+    print(pk)
+    return Response(pk)
